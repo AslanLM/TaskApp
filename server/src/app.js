@@ -5,24 +5,17 @@ import cors from 'cors'
 
 import authRoutes from "./routes/auth.routes.js";
 import taskRoutes from "./routes/tasks.routes.js";
+import { CLIENT_URL } from "./config.js";
 
 const app = express();
 
-const allowedOrigins = [
-    'http://localhost:5173',
-    'https://task-app-ecru-six.vercel.app'
-  ];
 
-app.use(cors({
-origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-    callback(null, true);
-    } else {
-    callback(new Error('Domain not allowed by CORS'));
-    }
-},
-credentials: true
-}));
+app.use(
+  cors({
+    credentials: true,
+    origin: CLIENT_URL,
+  })
+);
 
 
 app.use(morgan("dev"));
