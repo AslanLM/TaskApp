@@ -1,0 +1,175 @@
+.auth{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container{
+    display: block;
+    width: 85vh;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+/* login & register */
+
+
+.form-container{
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 25px;
+}
+
+.show-login{
+    animation: fadeIn 1.6s ease-in;
+}
+
+.show-register{
+    animation: fadeIn 1.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.form-title{
+    margin-bottom: 5vh;
+}
+
+
+.form-title h1{
+    font-size: 5.2rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.form-title p{
+    font-size: 1rem;
+}
+
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+  
+.form-container form .form-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+  
+  
+.form-container form .input-data{
+    width: 90%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 40px;
+}
+  
+  
+.input-data input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #007A8D;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+}
+   
+.input-data input:focus ~ label,
+.input-data input:not(:placeholder-shown) ~ label{
+    transform: translateY(-22px);
+    color: #007A8D;
+    font-size: 0.9rem;
+}
+  
+.input-data label{
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+  
+ 
+  
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+  
+.input-data .underline::before,
+.input-data .underline::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #007A8D;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+  
+.input-data input:focus ~ .underline::before, .underline::after,
+.input-data input:not(:placeholder-shown) ~ .underline::before, .underline::after{
+   transform: scaleX(1);
+}
+
+
+.form-row .btn{
+    height: 40px!important;
+    width: 240px!important;
+   
+}
+
+
+
+.form-row .btn span{
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.3s ease-out;
+}
+
+.form-row .btn:hover span{
+    transform: scale(1.05);
+}
+
+.form-container a{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    color: #007A8D;
+    margin-left: 5px;
+}
+
+.form-container .errors{
+    color: #FF3F34;
+}
+
+  

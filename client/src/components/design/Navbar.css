@@ -1,0 +1,80 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+}
+
+.bg-logo{
+    position: absolute;
+    top: 0;
+    left: 34px;
+    background-color: #fff;
+    height: 27px;
+    width: 111px;
+    border-radius: 25px;
+    clip-path: polygon(23% 0%, 92% 0%, 77% 100%, 8% 100%);
+}
+
+.bg-logo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: #007A8D;
+    height: 27px;
+    width: 0px;
+    border-radius: 25px;
+    clip-path: polygon(23% 0%, 92% 0%, 77% 100%, 8% 100%);
+    transition: 0.3s ease-out;
+}
+
+
+.logo:hover .bg-logo::before{
+    width: 111px;
+}
+
+.logo h1{
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.logo span{ 
+    color: #000;
+}
+
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+}
+
+
+.header a{
+    color: #fff;
+}
+
+.header .btn{
+    width: 100px;
+    box-shadow: none;
+    transition: all 0.2s ease-out;
+}
+
+.task-btn{
+    background-color: var(--white-color);
+    color: #000 !important;
+}
+
+.task-btn:hover{
+    background-color: #8C9195;
+}
