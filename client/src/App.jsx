@@ -11,7 +11,7 @@ function App() {
     <>
     <AuthProvider>
       <TaskProvider>
-        <BrowserRouter>
+        <BrowserRouter basename='/TaskApp'> {/*IMPORTANTE AGREGAR basename='/ValorantApp' ANTES DE DESPLEGAR QUE NO SE TE OLVIDE */}
 
           <Navbar/>
           <MainRouter/>
