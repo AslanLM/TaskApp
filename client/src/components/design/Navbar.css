@@ -125,7 +125,8 @@ nav ul{
     }
 
     .header .btn {
-        width: 84px;
+        width: 80px;
+        font: 0.85rem;
         font-weight: 600;
     }
 }
