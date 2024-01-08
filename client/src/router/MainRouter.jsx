@@ -10,7 +10,8 @@ import Auth from '../components/Auth'
 const MainRouter = () => {
   return (
     <Routes>
-        <Route path='/' element={<HomePage/>} />
+      <Route path='/' element={<HomePage/>} />
+        <Route path='/home' element={<HomePage/>} />
         
         <Route element={<Auth/>}>
           <Route path="/register" element={<RegisterPage/>} />

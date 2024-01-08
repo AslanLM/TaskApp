@@ -24,8 +24,8 @@ const LoginPage = ({toggleForm }) => {
       <div className='form-title'>
         <h1>Login</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque neque non porro inventore, v
-          oluptates minima doloribus incidunt? Omnis esse iste repellat quos. Quasi?
+          Welcome back to TaskMaster! Login to your account and dive into a world of productivity.
+            Manage your to-do list, add new tasks, and stay organized effortlessly.
         </p>
       </div>
       <form onSubmit={onSubmit}>

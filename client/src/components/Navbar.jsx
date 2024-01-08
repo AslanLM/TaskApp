@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <header className='header'>
         <div className='logo'>
-            <Link to='/'>
+            <Link to='/home'>
             <h1>Task <span>Master</span></h1>
             <div className='bg-logo'></div>
             </Link>

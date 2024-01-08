@@ -8,7 +8,8 @@ import TasksSS2 from '../assets/tasksAppSS2.jpg';
 import Footer from '../components/Footer';
 
 const HomePage = () => {
-  return (
+
+ return (
     <main>
     <section className="hero">
       <div className='welcome'>
@@ -16,8 +17,8 @@ const HomePage = () => {
       </div>
       <div className='text-reveal'>
         <h1>Your Task Hub
-          <img className='img-hero' src={FirstImg} alt="HeroImg" />
-          <img className='img-hero2' src={SecondImg} alt="HeroImg" />
+          <img key={1}  className='img-hero' src={FirstImg} alt="HeroImg" />
+          <img key={2}  className='img-hero2' src={SecondImg} alt="HeroImg" />
         Solution</h1>
       </div>
       <div className='text-reveal'>
@@ -39,14 +40,14 @@ const HomePage = () => {
           <h2>Add New Tasks</h2>
           <p>Easily add new tasks to your to-do list. Provide titles and descriptions to keep your tasks organized and detailed.</p>
         </div>
-        <div className='hiw-img'><img src={TasksSS1} alt="tasks app SS" /></div>
+        <div className='hiw-img'><img key={3} src={TasksSS1} alt="tasks app SS" /></div>
       </div>
       <div className='step2'>
         <div className='hiw-info2'>
           <h2>Manage Your Tasks</h2>
           <p>Effortlessly manage your tasks on the dashboard. Edit existing tasks or mark them as completed. Delete tasks you no longer need.</p>
         </div>
-        <div className='hiw-img2'><img src={TasksSS2} alt="tasks app SS" /></div>
+        <div className='hiw-img2'><img key={4} src={TasksSS2} alt="tasks app SS" /></div>
       </div>
     </section>
 

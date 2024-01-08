@@ -76,6 +76,12 @@ button{
   transform: scale(1.05);
 }
 
+@media screen and (max-width: 480px) {
+  .btn{
+    padding: 6px 12px;
+  }
+}
+
 
 svg:not(:root) {
   position: relative;

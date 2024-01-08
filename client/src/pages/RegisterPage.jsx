@@ -25,8 +25,8 @@ const RegisterPage = ({toggleForm}) => {
        <div className='form-title'>
         <h1>Register</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi itaque neque non porro inventore, v
-          oluptates minima doloribus incidunt? Omnis esse iste repellat quos. Quasi?
+        Ready to take control of your tasks? Join TaskApp today by registering your account. 
+        Experience the ease of organizing your to-do list, editing tasks on the go, and enhancing your productivity.
         </p>
       </div>
        
