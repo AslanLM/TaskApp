@@ -78,3 +78,54 @@ nav ul{
 .task-btn:hover{
     background-color: #8C9195;
 }
+
+/* header responsive */
+
+
+@media screen and (max-width: 786px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        font-size: 1.1rem;
+        gap: 10px;
+    }
+
+    .header .btn {
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 12px;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .bg-logo{
+        left: 25px;
+    }
+
+    nav ul {
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+
+    .li-username{
+        display: none;
+    }
+
+    .header .btn {
+        width: 80px;
+        font-weight: 600;
+    }
+}

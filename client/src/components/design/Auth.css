@@ -17,6 +17,24 @@
     overflow: hidden;
 }
 
+/* auth responsive */
+
+
+@media screen and (max-width: 785px){
+    .auth-container {
+        width: 80vh;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .auth-container {
+        width: 85vw;
+        height: 80vh;
+    }
+}
+
+
 /* login & register */
 
 
@@ -172,4 +190,50 @@
     color: #FF3F34;
 }
 
+
   
+@media screen and (max-width: 785px){
+    .form-container {
+        padding: 0 30px;
+    }
+
+    .form-title h1 {
+        font-size: 4rem;
+    }
+
+    .form-container p {
+        font-size: 1rem;
+    }
+
+    .form-container form .btn {
+        height: 45px!important;
+        width: 240px!important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 0 20px;
+    }
+
+    .form-title h1 {
+        font-size: 3rem;
+    }
+
+    .form-container p {
+        font-size: 0.8rem;
+    }
+
+    .form-container form .btn {
+        height: 40px!important;
+        width: 180px!important;
+    }
+
+    .input-data input{
+        font-size: 1.2rem;
+    }
+
+    .input-data label{
+        font-size: 1rem;
+    }
+}

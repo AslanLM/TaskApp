@@ -17,7 +17,6 @@
     height: 90%;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    padding: 20px;
     overflow: hidden;
 }
 
@@ -52,12 +51,11 @@
 .other-info-card{
     display: flex;
     align-items: center;
-    gap: 7px;
+    justify-content: space-between;
 }
 
 .other-info-card span{
     font-size: 1rem;
-    margin-right: 14%;
 }
 
 .other-info-card button{
@@ -67,6 +65,24 @@
     border-radius: 5px;
     height: 1.6rem;
     width: 1.6rem;
+}
+
+.btn-create {
+    display: none;
+    position: absolute;
+    top: 14%;
+    left: 8%;
+    border-radius: 5px;
+    background-color: #004db1;
+}
+
+.btn-create:hover{
+    background-color: #003172;
+}
+
+.btn-container{
+    display: flex;
+    gap: 7px;
 }
 
 .btn-edit{
@@ -83,9 +99,66 @@
     left: 25%;
 }
 
+/* task container responsive */
+
+@media screen and (max-width: 785px){
+
+    .tasks{
+        margin-top: 19.2vh;
+        padding-top: 0;
+        padding-bottom: 8vh;
+        height: auto;
+    }
+  
+
+    .task-container {
+        grid-template-columns: repeat(2, 1fr);
+        flex: 1;
+        min-height: 90%;
+        height: auto;
+        overflow: visible;
+    }
+
+    .task-card {
+        height: 200px;
+        width: 100%;
+    }
+
+    .btn-create{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
 
 
-/* task form create */
+    .task-container {
+        grid-template-columns: 1fr;
+        flex: 1;
+    }
+
+    .task-card {
+        height: 200px;
+        width: 100%;
+    }
+
+    .other-info-card span{
+    margin-right: 35%;
+    }
+
+    .btn-create{
+        left: 15%;
+    }
+}
+
+
+
+/* task form */
+
+.form-wrap{
+    flex: 0.25;
+    height: 90%;
+}
 
 .form-task-container{
     display: flex;
@@ -94,8 +167,7 @@
     background-color: var(--dark-greenish-black);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 90%;
-    flex: 0.25;
+    height: 100%;
 }
 
 .form-task-container form{
@@ -139,7 +211,20 @@
 }
 
 
-/* task form edit */
+@media screen and (max-width: 785px){
+    .form-wrap{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* task form pop-up */
 
 
 .form-popup{
@@ -156,8 +241,10 @@
 }
 
 
-.form-edit{
+.form-edit,
+.form-create{
     height: 70%;
+    width: 25%;
     position: relative;
 }
 
@@ -166,6 +253,20 @@
     right: 12px;
     top: 12px;
 }
+
+@media screen and (max-width: 785px){
+    .form-edit,
+    .form-create{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+
+
 
 
 

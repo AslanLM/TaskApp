@@ -19,11 +19,11 @@ const Navbar = () => {
             <ul>
                 {isAuthenticated ? (
                      <>
-                      <li>
+                      <li className='li-username'>
                        Welcome {user.username}
                      </li> 
                      <li>
-                        <NavLink  className='btn task-btn' to='/tasks'>Add Tasks</NavLink>
+                        <NavLink  className='btn task-btn' to='/tasks'>Dashboard</NavLink>
                      </li> 
                      <li>
                         <NavLink className='btn' to='/' onClick={()=>{logout()}}>Log Out</NavLink>
